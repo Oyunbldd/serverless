@@ -25,13 +25,13 @@ provider:
   runtime: nodejs12.x
 plugins:
   - serverless-offline
-  - serverless-plugin-include-dependencies
+ 
 package:
  patterns:
-   - '!exclude-me.js'
-   - '!exclude-me-dir/**'
-   - include-me.js
-   - include-me-dir/**  
+  
+   - '!node-modules/**'
+   - 'node_modules/random-words/**'
+   
   
 # you can overwrite defaults here
 #  stage: dev
