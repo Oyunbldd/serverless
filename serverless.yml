@@ -68,6 +68,8 @@ package:
 #    - include-me-dir/**
 
 functions:
+  dynamo: 
+    handler: dynamo.hello
   randomWord:
     handler: handler.hello
     events:
@@ -79,7 +81,7 @@ functions:
             parameters:
               querystrings:
                 word: true
-  
+      
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
